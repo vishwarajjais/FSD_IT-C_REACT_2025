@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Container</title>
+    
+</head>
+<body>
+    <h2>User Input Form</h2>
+    <div class="container">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name"><br><br>
+
+        <label for="branch">Branch: </label><br>
+        <input type="text" id="branch"><br><br>
+
+        <label for="section">Section: </label><br>
+        <input type="text" id="section"><br><br>
+
+        <label for="college">College: </label><br>
+        <input type="text" id="college"><br><br>
+
+        <label for="location">Location: </label><br>
+        <input type="text" id="location"><br><br>
+
+        <label for="university">University: </label><br>
+        <input type="text" id="university"><br><br>
+
+        <button onclick="showData()">Show Data</button>
+    </div>
+
+    <div id="disp" class="output-box"></div>
+
+    <script>
+        function showData() {
+            const name = document.getElementById('name').value;
+            const branch = document.getElementById('branch').value;
+            const section = document.getElementById('section').value;
+            const college = document.getElementById('college').value;
+            const location = document.getElementById('location').value;
+            const university = document.getElementById('university').value;
+
+            document.getElementById('disp').innerHTML = `
+                <h3>User Details</h3>
+                <p><b>Name:</b> ${name}</p>
+                <p><b>Branch:</b> ${branch}</p>
+                <p><b>Section:</b> ${section}</p>
+                <p><b>College:</b> ${college}</p>
+                <p><b>Location:</b> ${location}</p>
+                <p><b>University:</b> ${university}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
