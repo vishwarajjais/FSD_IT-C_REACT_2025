@@ -16,6 +16,8 @@ async function fetchData() {
             <td>${element.id}</td>
             <td>${element.firstName}</td>
             <td>${element.lastName}</td>
+            <td>${element.maidenName}</td>
+            <td>${element.age}</td>
         </tr>`
     });
 
