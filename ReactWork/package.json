@@ -12,5 +12,9 @@
   "description": "",
   "devDependencies": {
     "vite": "^7.1.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react-router-dom": "^7.9.5"
   }
 }

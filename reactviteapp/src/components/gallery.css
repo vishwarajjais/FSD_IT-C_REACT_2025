@@ -1,9 +1,14 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;  /* changed to flex-start to align cards at the top */
-    gap: 30px;               /* increased gap for more spacing between cards */
-    padding: 20px;
-    flex-wrap: wrap;
+.gallery{
+  display: flex;
+  flex-direction: row;  /* default is row, but you can change it to column if needed */
+  justify-content: space-around; /* spreads cards evenly across width */
+  align-items: flex-start;
+  gap: 2px;
+  width: 10vw;         /* full viewport width */
+  min-height: 100vh;    /* full viewport height */
+  flex-wrap: nowrap;      /* allow wrapping on small screens */
+  margin: 0;
+  padding: 40px 0;
+  background-color: #f8f9fa; /* optional: light background */
+  box-sizing: border-box;
 }
